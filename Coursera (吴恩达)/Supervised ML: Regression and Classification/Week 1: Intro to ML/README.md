@@ -215,6 +215,29 @@ Below, use the slider control to select the value of $w$ that minimizes cost.
 plt_intuition(x_train,y_train)
 ```
 
+### Cost Function Visualization- 3D
+
+#### Larger Data Set
+```py
+x_train = np.array([1.0, 1.7, 2.0, 2.5, 3.0, 3.2])
+y_train = np.array([250, 300, 480,  430,   630, 730,])
+```
+
+```py
+plt.close('all') 
+fig, ax, dyn_items = plt_stationary(x_train, y_train)
+updater = plt_update_onclick(fig, ax, x_train, y_train, dyn_items)
+```
+
+In this case, values of approximately $w=209$ and $b=2.4$ provide low cost. Note that, because our training examples are not on a line, the minimum cost is not zero.
+
+#### Convex Cost surface
+
+```py
+soup_bowl()
+```
+
+
 <br>
 
 ## Gradient Descent for Linear Regression
