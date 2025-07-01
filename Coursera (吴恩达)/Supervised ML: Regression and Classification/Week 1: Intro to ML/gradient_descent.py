@@ -42,8 +42,9 @@ def gradient_descent(x, y, w_in, b_in, alpha, num_iters):
         b = b - alpha * dj_db
         w = w - alpha * dj_dw
 
-        J_history.append(compute_cost(x, y, w, b))
-        p_history.append([w, b])
+        if i < 100000:
+            J_history.append(compute_cost(x, y, w, b))
+            p_history.append([w, b])
 
         # Print cost every at intervals 10 times or as many iterations if < 10
         if i % math.ceil(num_iters / 10) == 0:
