@@ -373,6 +373,7 @@ a[1]   =  [10 11 12 13 14 15 16 17 18 19] ,  a[1].shape   = (10,) a 1-D array
 - Numpy
 - Matplotlib
 
+[!image](https://github.com/lxriscute0501/ML-Notes/blob/main/Coursera%20(吴恩达)/Supervised%20ML%3A%20Regression%20and%20Classification/Week%202%3A%20Regression%20with%20multiple%20input%20variables/images/week2_2_1.jpg)
 
 
 ### Problem Statement
